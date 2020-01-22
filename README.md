@@ -15,8 +15,10 @@ Criteria:
 ```
 Example:
 N_components: LDA其中一个参数，定义降维后的维度。通常<= min(number of classes-1, number of features)
-```from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
-lda = LDA(n_components=1)```
+```
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
+lda = LDA(n_components=1)
+```
 
 # Idea of PCA
 PCA is unsupervised linear dimensionality reduction approach by extracting information from high-dimensional space via projecting it into low-dimensional subspace.
