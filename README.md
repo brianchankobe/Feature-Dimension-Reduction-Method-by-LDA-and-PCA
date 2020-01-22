@@ -1,7 +1,7 @@
 # Feature-Dimension-Reduction-Method-by-LDA-and-PCA
 Implementation of dimensionality reduction by LDA and PCA.
 
-#Idea of LDA  
+# Idea of LDA  
 A supervised approach as it takes class label (类标签) to do the classification.  LDA can help dataset to find the boundary between clusters of classes by projecting data points in dataset (不同样本) 
 onto a line so that it can be separated as possible.
 
@@ -17,7 +17,7 @@ Example:
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 lda = LDA(n_components=1)
 
-#Idea of PCA
+# Idea of PCA
 PCA is unsupervised linear dimensionality reduction approach by extracting information from high-dimensional space via projecting it into low-dimensional subspace.
 It is a statistical approach to use orthogonal transformation to convert a set of observations of possibly correlated variables (一些有不同数值的特征) into a set of linearly uncorrelated variables (Principle components)
 
@@ -31,15 +31,15 @@ from sklearn.decomposition import PCA
 pca = PCA(n_components=2, random_state=42)
 pca.fit(X_train_uncorr)
 
-#Input File
+# Input File
 CSV file Format:
 row-instance(observation vector) column-attribute(feature vector)
 
-#LDA VS PCA
+# LDA VS PCA
 	1. 主成分数量（降维后的维度）
 		a. LDA: 根据数据集的类标签数和特征数判定
     b. PCA：根据数据集的特征数和样本数来判定
 
-#Common
+# Common
 	1. 降维后，训练速度快
   2. 准确率 < 完整数据集训练后 和 移除相关特征后
