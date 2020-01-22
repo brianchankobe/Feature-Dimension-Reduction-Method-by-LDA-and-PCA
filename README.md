@@ -10,7 +10,8 @@ How to determine the clusters？
   
  Criteria: 
 	1. Maximize the distance between centroid of each class
-  2. Minimize the variance within the data point of each class (Covariance)
+	
+  	2. Minimize the variance within the data point of each class (Covariance)
 
 Example:
 **N_components: LDA其中一个参数，定义降维后的维度。通常<= min(number of classes-1, number of features)**
